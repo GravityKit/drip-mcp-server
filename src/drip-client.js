@@ -454,8 +454,9 @@ export class DripClient {
     // Always filter for unsubscribed status
     queryParams.append('status', 'unsubscribed');
     
-    // Sort by updated_at to get most recent status changes
-    queryParams.append('sort', params.sort || 'updated_at');
+    // Sort by created_at descending to get most recently unsubscribed
+    // Note: Drip API doesn't expose unsubscribed_at directly in sorting
+    queryParams.append('sort', params.sort || 'created_at');
     queryParams.append('direction', params.direction || 'desc');
     
     // Pagination

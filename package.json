@@ -1,0 +1,36 @@
+{
+  "name": "@gravitykit/drip-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Drip API integration",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector node src/index.js",
+    "check-env": "node scripts/check-env.js",
+    "test": "node src/tests/integration.test.js",
+    "test:unit": "node src/tests/run.js",
+    "test:validation": "node src/tests/validation.test.js",
+    "test:names": "node src/tests/name-fields.test.js",
+    "test:unsubscribes": "node src/tests/unsubscribes.test.js",
+    "test:all": "npm run test:unit && npm test && npm run test:validation && npm run test:names"
+  },
+  "keywords": [
+    "mcp",
+    "drip",
+    "email-marketing",
+    "automation",
+    "crm"
+  ],
+  "author": "GravityKit",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

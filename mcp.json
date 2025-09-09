@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "drip": {
+      "command": "node",
+      "args": ["src/index.js"],
+      "env": {
+        "DRIP_API_KEY": "${DRIP_API_KEY}",
+        "DRIP_ACCOUNT_ID": "${DRIP_ACCOUNT_ID}"
+      }
+    }
+  }
+}

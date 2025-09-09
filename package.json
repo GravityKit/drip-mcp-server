@@ -32,5 +32,24 @@
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "files": [
+    "src/",
+    "scripts/",
+    "docs/",
+    "LICENSE",
+    "README.md",
+    ".env.example"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GravityKit/drip-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GravityKit/drip-mcp-server/issues"
+  },
+  "homepage": "https://github.com/GravityKit/drip-mcp-server#readme",
+  "publishConfig": {
+    "access": "public"
   }
 }
